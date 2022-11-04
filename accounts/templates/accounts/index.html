@@ -8,15 +8,15 @@
 
 <!-- title -->
 <div class="comment" style="position:fixed;  z-index: 2; margin:1.5rem 0 0 1rem;">
-    <h1 style="margin:0; font-size:2.2rem;">간단한 <span style="font-weight:bold;">회원가입</span>을</h1>
-    <h1 style="font-size:2.2rem; margin-top:0.5rem;">하려고 해요.</h1>
+    <p style="margin:0; font-size:2.2rem;">간단한 <span style="font-weight:bold;">회원가입</span>을</p>
+    <p style="font-size:2.2rem; margin-top:0.5rem;">하려고 해요.</p>
 </div>
 
 <!-- content -->
-<div class="comment" style="font-size: 2rem; position:fixed;  z-index: 2; margin:15rem 0 0 1rem;">
+<div class="comment" style="font-size: 2rem; position:fixed;  z-index: 2; margin:14rem 0 0 1rem;">
     <div style="display:flex; flex-direction:column; justify-content:center; align-items:center;">
         <img src="{% static 'accounts/img/speaker.png' %}" alt="" style="height:8rem;">
-        <div style="padding-top:2rem;">
+        <div style="padding-top:2rem; display:flex; flex-direction:column; justify-content:center; align-items:center;">
             <p style="margin:0; "><span style="color:rgb(223, 0, 0); font-weight:bold;">확성기 아이콘</span>을</p>
             <p style="margin:0;">누르시면 <span style="font-weight:bold;">음성 안내</span>를</p>
             <p style="margin:0;">들으실 수 있어요</p>
@@ -24,5 +24,7 @@
     </div>
 </div>
 
+<!-- next button -->
+<img src="{% static 'accounts/img/next.png' %}" alt="" style="height:5rem; padding-top:1.5rem; position:fixed; bottom:5rem; left:4rem;">
 
 {% endblock %}

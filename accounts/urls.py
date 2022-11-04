@@ -20,4 +20,9 @@ app_name = 'accounts'
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('first/', views.first, name='first'),
+    path('second/', views.second, name='second'),
+    path('third/', views.third, name='third'),
+    path('fourth/', views.fourth, name='fourth'),
+    path('complete/', views.complete, name='complete'),
 ]

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- background image -->
+<img class="fixed-top" src="{% static 'accounts/img/background.png' %}" alt="" style="width:100%; height:100%; z-index : -2;">
+
+<!-- content -->
+<div class="comment" style="position:fixed;  z-index: 2; margin:17rem 0; margin-left:4.5rem;">
+    <div style="display:flex; flex-direction:column; justify-content:center; align-items:center;">
+        <div style=" display:flex; flex-direction:column; justify-content:center; align-items:center;">
+            <h1 style="font-size:2.5rem; font-weight:lighter;"><span style="font-weight:500;">회원가입</span>을</h1>
+            <h1 style="font-size:2.5rem; font-weight:lighter;"><span style="font-weight:500; color:rgb(0, 0, 228);">완료</span>했어요!</h1>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
