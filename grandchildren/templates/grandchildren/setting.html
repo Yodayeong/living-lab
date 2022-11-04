@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load django_bootstrap5 %}
+
+{% block css %}
+{% endblock %}
+
+{% block content %}
+<div class="my-5 text-center">
+  <h1 style="font-weight:bold; font-size:2rem;">환경설정</h1>
+</div>
+<div class="boxes">
+  <div class="row">
+    <div class="col-6">
+      <a href="" style="text-decoration:none;">
+      <div class="mb-4" style="text-align:center; margin:0 auto; background-color:#C1284C; width:150px; height:150px; border-radius:2rem; font-size:25px; font-weight:bold;color:white;">
+        <img src="{% static 'grandchildren/img/profile.png' %}" alt="" style="width:65px; height:65px; margin-top:30px;">
+        <p style="margin-top:10px;">이름 변경</p>
+      </div>
+      </a>
+      <a href="" style="text-decoration:none;">
+      <div class="mb-3" style="text-align:center; margin:0 auto; background-color:#44758D; width:150px; height:150px; border-radius:2rem; font-size:25px; font-weight:bold;color:white;">
+        <img src="{% static 'grandchildren/img/gender.png' %}" alt="" style="width:65px; height:65px; margin-top:30px;">
+        <p style="margin-top:10px;">성별 변경</p>
+      </div>
+      </a>
+    </div>
+    <div class="col-6">
+      <a href="" style="text-decoration:none;">
+      <div class="mb-4" style="text-align:center; margin:0 auto; background-color:#E6A656; width:150px; height:150px; border-radius:2rem; font-size:25px; font-weight:bold;color:white;">
+        <img src="{% static 'grandchildren/img/calender.png' %}" alt="" style="width:65px; height:65px; margin-top:30px;">
+        <p style="margin-top:10px;">생일 변경</p>
+      </div>
+      </a>
+      <a href="" style="text-decoration:none;">
+      <div class="mb-3" style="text-align:center; margin:0 auto; background-color:#2F55B5; width:150px; height:150px; border-radius:2rem; font-size:25px; font-weight:bold;color:white;">
+        <img src="{% static 'grandchildren/img/clock.png' %}" alt="" style="width:65px; height:65px; margin-top:30px;">
+        <p style="margin-top:10px;">시간 변경</p>
+      </div>
+      </a>
+    </div>
+  </div>
+</div>
+{% endblock content %}

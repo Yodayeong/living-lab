@@ -1,0 +1,27 @@
+{% load static %}
+{% load django_bootstrap5 %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">  
+</head>
+<body>
+  <img class="fixed-top" src="{% static 'accounts/img/account_template.png' %}" alt="" style="width:100%; height:100%; z-index : -2;">
+  <div style="text-align:center;">
+    <h1 style="font-weight:bold; font-size:2.5rem; margin-top:7.5rem;">오늘의 감정</h1>
+    <img src="{% static 'grandchildren/img/sad_heart.png' %}" alt="" style="width:90px; margin-top:80px;">
+    <div>
+      <img src="{% static 'grandchildren/img/bar.png' %}" alt="" style="width:300px; margin-top:20px;"></div>
+    </div>
+    <h1 class="fw-light" style="line-height: 2.5rem; margin-top:15px; margin-left:30px;"><span class="fw-normal">김문경</span> 할아버지는<br>현재 <span class="fw-semibold text-primary">2주 연속으로</span><br><span class="fw-semibold text-primary">우울한 상태</span>시네요!</h1>
+    <h1 class="fw-light" style="line-height: 2.5rem; margin-top:15px; margin-left:30px;"><span class="fw-normal">전문적인 상담과 치료</span>를<br>권유드려요</h1>
+  <div style="text-align:center;">
+    <img src="{% static 'grandchildren/img/blue_bar.png' %}" alt="" style="width:250px;">
+  </div>    
+</body>
+</html>
