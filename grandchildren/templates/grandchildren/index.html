@@ -6,5 +6,28 @@
 {% endblock %}
 
 {% block content %}
-<h1>index</h1>
+<div class="my-5 text-center">
+  <h1 style="font-weight:bold; font-size:2rem;">어서오세요</h1>
+  <h1 style="font-weight:bold; font-size:2rem;">김문경 할아버지</h1>
+</div>
+<div class="boxes">
+  <a href="{% url 'emotions:create' %}" style="text-decoration:none;">
+    <div class="mb-3" style="text-align:center; margin:0 auto; background-color:#C1284C; width:160px; height:160px; border-radius:2rem; font-size:25px; font-weight:bold;color:white;">
+      <img src="{% static 'grandchildren/img/phone-call.png' %}" alt="" style="width:65px; height:65px; margin-top:30px;">
+      <p style="margin-top:10px;">오늘의 질문</p>
+    </div>
+  </a>
+  <a href="{% url 'grandchildren:sentiment' %}" style="text-decoration:none;">
+    <div class="mb-3" style="text-align:center; margin:0 auto; background-color:#44758D; width:160px; height:160px; border-radius:2rem; font-size:25px; font-weight:bold;color:white;">
+      <img src="{% static 'grandchildren/img/clipboard.png' %}" alt="" style="width:65px; height:65px; margin-top:30px;">
+      <p style="margin-top:10px;">오늘의 감정</p>
+    </div>
+  </a>
+  <a href="{% url 'grandchildren:setting' %}" style="text-decoration:none;">
+  <div class="mb-3" style="text-align:center; margin:0 auto; background-color:#E6A656; width:160px; height:160px; border-radius:2rem; font-size:25px; font-weight:bold;color:white;">
+    <img src="{% static 'grandchildren/img/gear.png' %}" alt="" style="width:65px; height:65px; margin-top:30px;">
+    <p style="margin-top:10px;">환경 설정</p>
+  </div>
+  </a>
+</div>
 {% endblock content %}

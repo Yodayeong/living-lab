@@ -5,4 +5,6 @@ app_name = "grandchildren"
 
 urlpatterns = [
     path('', views.index, name="index"),
+    path('sentiment/', views.sentiment, name="sentiment"),
+    path('setting/', views.setting, name="setting"),
 ]
