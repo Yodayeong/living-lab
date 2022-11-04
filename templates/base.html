@@ -12,6 +12,9 @@
   {% bootstrap_css%}
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
   {% endblock css %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   {% block script %}
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   {% endblock script %}
@@ -32,6 +35,10 @@
   {% comment %} .navbar-custom {
       background-image: linear-gradient( 135deg, #F97794 10%, #623AA2 100%);
   } {% endcomment %}
+
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
 
 
   /* change the brand and text color */
