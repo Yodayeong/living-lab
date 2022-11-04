@@ -29,6 +29,7 @@
 </div>
 
 <!-- next button -->
-<img src="{% static 'accounts/img/next.png' %}" alt="" style="height:5rem; padding-top:1.5rem; position:fixed; bottom:5rem; left:4rem;">
-
+<a href="{% url 'accounts:third' %}">
+    <img src="{% static 'accounts/img/next.png' %}" alt="" style="height:5rem; padding-top:1.5rem; position:fixed; bottom:5rem; left:4rem;">
+</a>
 {% endblock %}
