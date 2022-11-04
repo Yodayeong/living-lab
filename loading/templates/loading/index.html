@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<a href="{% url 'loading:info' %}">
+    <img class="fixed-top" src="{% static 'accounts/img/living-logo.png' %}" alt="" style="height:13rem; z-index: -2; margin: 15rem 0 0 6rem;">
+</a>
+
+{% endblock %}
